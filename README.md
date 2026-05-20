@@ -2,6 +2,10 @@
 
 Desenvolvi este aplicativo para ajudar na organização de mercadorias de forma simples e prática. A ideia é que ele funcione bem no dia a dia, mesmo sem internet, mas que também permita compartilhar os dados com outras pessoas da mesma loja através de um código comum.
 
+### 🎥 Demonstração (Video Project)
+![Demonstração do App](screenshots/video_projeto.gif)
+*(Se você estiver vendo pelo GitHub e o vídeo não carregar, ele está disponível na pasta screenshots)*
+
 ### O que o app oferece:
 - **Sincronização em tempo real**: Qualquer mudança feita em um aparelho aparece na hora para os outros usuários que usam o mesmo código de loja.
 - **Funciona offline**: Os dados ficam salvos no próprio celular (Room), então o app não para de funcionar se a internet cair. Assim que a conexão volta, ele sincroniza tudo.
