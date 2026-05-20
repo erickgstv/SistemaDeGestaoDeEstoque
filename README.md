@@ -1,29 +1,21 @@
-# Sistema de Gestão de Estoque 📦
+# Controle de Estoque
 
-Este é um aplicativo Android moderno para gestão de estoque, que combina a rapidez de um banco de dados local com a facilidade de sincronização em tempo real via nuvem.
+Fiz esse app pra ajudar a organizar mercadoria de um jeito fácil. A ideia é que ele funcione bem sozinho no celular (mesmo sem internet), mas que também dê pra compartilhar com outras pessoas da mesma loja usando um código simples.
 
-## 🚀 Ideia do App
-A ideia principal é oferecer uma ferramenta simples e eficiente para pequenos lojistas ou usuários que precisam controlar mercadorias. O diferencial é o **sistema de "Código da Loja"**, que permite que diferentes pessoas (como funcionários de uma mesma loja) compartilhem e editem o mesmo estoque simultaneamente, apenas inserindo o mesmo código.
+### O que tem no app:
+- **Tudo sincronizado**: Se eu mudar a quantidade de um produto aqui, aparece na hora no celular de quem tiver o mesmo código da loja.
+- **Funciona sem internet**: Os dados ficam salvos no aparelho, então dá pra usar em qualquer lugar. Quando a internet volta, ele atualiza tudo.
+- **Código da Loja**: Não precisa de conta complicada. É só inventar um código (ex: "minha-loja-123") e colocar em todos os celulares que vão usar o mesmo estoque.
+- **Dashboard**: No topo já mostra o valor total que tem parado no estoque pra facilitar.
+- **UN ou KG**: Dá pra marcar se o produto é vendido por unidade ou por quilo.
 
-## ✨ Funcionalidades
-- **Sincronização em Tempo Real**: Usa Firebase Firestore para que qualquer alteração em um dispositivo reflita instantaneamente em outros.
-- **Modo Offline (Room)**: Os dados ficam salvos localmente, permitindo consulta mesmo sem internet. O app se sincroniza automaticamente ao reconectar.
-- **Dashboard de Valor**: Calcula automaticamente o valor total do estoque (Preço x Quantidade).
-- **Flexibilidade de Unidades**: Suporta cadastro de produtos por **Unidade (UN)** ou **Quilograma (KG)**.
-- **Busca Rápida**: Filtro inteligente para encontrar produtos pelo nome.
-- **Privacidade por Código**: Sistema de IDs de loja customizáveis para isolar os dados entre diferentes grupos de usuários.
+### Por que eu fiz?
+Queria algo que fosse "abrir e usar", sem frescura e que resolvesse o problema de sincronizar o estoque com outras pessoas de forma rápida.
 
-## 🛠️ Tecnologias Utilizadas
-- **Linguagem**: Java
-- **Banco Local**: Room Persistence Library (Android Jetpack)
-- **Nuvem/Backend**: Firebase Firestore & Firebase Authentication
-- **Interface**: Material Design 3, RecyclerView, ConstraintLayout
-
-## 📱 Como usar
-1. Abra o app e cadastre seus primeiros produtos.
-2. Clique no ícone de ferramenta (configuração) no topo para definir um **Código de Loja** único.
-3. Peça para outros usuários inserirem o mesmo código no app deles.
-4. Pronto! Todos agora compartilham o mesmo estoque em tempo real.
+### O que usei pra fazer:
+- Java (Android Studio)
+- Room (pra salvar no celular)
+- Firebase (pra sincronizar na nuvem)
 
 ---
-Desenvolvido por [Erick Gustavo](https://github.com/erickgstv)
+Feito por Erick Gustavo.
