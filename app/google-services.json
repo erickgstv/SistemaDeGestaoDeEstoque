@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211051088645",
+    "project_id": "gestao-de-estoque-21022",
+    "storage_bucket": "gestao-de-estoque-21022.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211051088645:android:928e63e73b765cc000c56c",
+        "android_client_info": {
+          "package_name": "com.erick.sistemadegestodeestoque"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsKmel1CZQQ_2xLlQqqvn65OgSdTtCc3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
