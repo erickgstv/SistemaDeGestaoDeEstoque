@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/4ffe26cd-a7c7-4eeb-a59f-365c86de8196
+
 # Controle de Estoque
 
 Desenvolvi este aplicativo para ajudar na organização de mercadorias de forma simples e prática. A ideia é que ele funcione bem no dia a dia, mesmo sem internet, mas que também permita compartilhar os dados com outras pessoas da mesma loja através de um código comum.
