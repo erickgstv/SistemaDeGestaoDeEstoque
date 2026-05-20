@@ -1,21 +1,21 @@
 # Controle de Estoque
 
-Fiz esse app pra ajudar a organizar mercadoria de um jeito fácil. A ideia é que ele funcione bem sozinho no celular (mesmo sem internet), mas que também dê pra compartilhar com outras pessoas da mesma loja usando um código simples.
+Desenvolvi este aplicativo para ajudar na organização de mercadorias de forma simples e prática. A ideia é que ele funcione bem no dia a dia, mesmo sem internet, mas que também permita compartilhar os dados com outras pessoas da mesma loja através de um código comum.
 
-### O que tem no app:
-- **Tudo sincronizado**: Se eu mudar a quantidade de um produto aqui, aparece na hora no celular de quem tiver o mesmo código da loja.
-- **Funciona sem internet**: Os dados ficam salvos no aparelho, então dá pra usar em qualquer lugar. Quando a internet volta, ele atualiza tudo.
-- **Código da Loja**: Não precisa de conta complicada. É só inventar um código (ex: "minha-loja-123") e colocar em todos os celulares que vão usar o mesmo estoque.
-- **Dashboard**: No topo já mostra o valor total que tem parado no estoque pra facilitar.
-- **UN ou KG**: Dá pra marcar se o produto é vendido por unidade ou por quilo.
+### O que o app oferece:
+- **Sincronização em tempo real**: Qualquer mudança feita em um aparelho aparece na hora para os outros usuários que usam o mesmo código de loja.
+- **Funciona offline**: Os dados ficam salvos no próprio celular (Room), então o app não para de funcionar se a internet cair. Assim que a conexão volta, ele sincroniza tudo.
+- **Código da Loja**: Um jeito fácil de compartilhar o estoque sem precisar de cadastros complexos. É só definir um código e usar nos aparelhos da equipe.
+- **Valor Total**: O painel principal mostra automaticamente o valor total que você tem em estoque.
+- **Unidades (UN/KG)**: Permite cadastrar produtos tanto por unidade quanto por quilo.
 
-### Por que eu fiz?
-Queria algo que fosse "abrir e usar", sem frescura e que resolvesse o problema de sincronizar o estoque com outras pessoas de forma rápida.
+### Por que este projeto?
+O objetivo foi criar uma ferramenta direta ao ponto, sem complicações, focada em quem precisa de agilidade para controlar e sincronizar o estoque com outras pessoas.
 
-### O que usei pra fazer:
+### Tecnologias:
 - Java (Android Studio)
-- Room (pra salvar no celular)
-- Firebase (pra sincronizar na nuvem)
+- Room (Banco de dados local)
+- Firebase Firestore (Sincronização na nuvem)
 
 ---
-Feito por Erick Gustavo.
+Desenvolvido por Erick Gustavo.
