@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private ProdutoAdapter adapter;
     private SearchView searchView;
     private TextView textViewValorTotal;
+    private TextView textViewEstoqueBaixo;
     private TextView textViewStoreName;
     private ImageButton btnConfigLoja;
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         searchView = findViewById(R.id.searchView);
         textViewValorTotal = findViewById(R.id.textViewValorTotal);
+        textViewEstoqueBaixo = findViewById(R.id.textViewEstoqueBaixo);
 
         db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "produto-db")
                 .allowMainThreadQueries()
@@ -105,10 +107,21 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         
         double total = 0;
+        int estoqueBaixoContador = 0;
         for (Produto p : produtos) {
             total += p.getPreco() * p.getQuantidade();
+            if (p.getQuantidade() < 5) {
+                estoqueBaixoContador++;
+            }
         }
         textViewValorTotal.setText(String.format("R$ %.2f", total));
+
+        if (estoqueBaixoContador > 0) {
+            textViewEstoqueBaixo.setVisibility(View.VISIBLE);
+            textViewEstoqueBaixo.setText("Itens com estoque baixo: " + estoqueBaixoContador);
+        } else {
+            textViewEstoqueBaixo.setVisibility(View.GONE);
+        }
 
         if (!searchView.getQuery().toString().isEmpty()) {
             adapter.filtrar(searchView.getQuery().toString());

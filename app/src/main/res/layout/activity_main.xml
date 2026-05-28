@@ -81,6 +81,16 @@
                         android:textColor="@color/design_default_color_primary"
                         android:textStyle="bold" />
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewEstoqueBaixo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Itens com estoque baixo: 0"
+                    android:textColor="#D32F2F"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <ImageButton
